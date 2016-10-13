@@ -1,0 +1,18 @@
+<?php
+
+namespace backend\controllers;
+
+use yii\rest\ActiveController;
+
+class TestController extends ActiveController
+{
+
+    public $modelClass = 'common\models\User';
+
+    public function actionIndex()
+    {
+
+        return $this->render('index');
+    }
+
+}
