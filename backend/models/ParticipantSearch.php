@@ -16,6 +16,7 @@ class ParticipantSearch extends Participant
 
     public $countryName;
     public $sportType;
+    public $markName;
 
     /**
      * @inheritdoc
@@ -25,7 +26,7 @@ class ParticipantSearch extends Participant
         return [
             [['id', 'country_id', 'sport_id', 'enet_id', 'status_t', 'mark_id'], 'integer'],
             [['name', 'gender', 'type', 'del', 'ut', 'last_update', 'short_name', 'live_monitor_name', 'teaser_name'], 'safe'],
-            [['countryName', 'sportType'], 'safe'],
+            [['countryName', 'sportType', 'markName'], 'safe'],
         ];
     }
 
@@ -47,9 +48,11 @@ class ParticipantSearch extends Participant
      */
     public function search($params)
     {
-        $query = Participant::find()->where(['participant.del'=>'no']);;
+        $query = Participant::find()->where(['participant.del'=>'no']);
         $query->joinWith('country');
         $query->joinWith('sport');
+        $query->joinWith('mark');
+        $query->orderBy('participant.id');
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
@@ -69,6 +72,10 @@ class ParticipantSearch extends Participant
                 'sportType' => [
                     'asc' => [ 'sport_id' => SORT_ASC],
                     'desc' => ['sport_id' => SORT_DESC],
+                ],
+                'markName' => [
+                    'asc' => [ 'mark_id' => SORT_ASC],
+                    'desc' => ['mark_id' => SORT_DESC],
                 ]
             ]
         ]);
@@ -87,8 +94,7 @@ class ParticipantSearch extends Participant
             'ut' => $this->ut,
             'enet_id' => $this->enet_id,
             'status_t' => $this->status_t,
-            'last_update' => $this->last_update,
-            'mark_id' => $this->mark_id,
+            'last_update' => $this->last_update
         ]);
 
         $query
@@ -100,7 +106,8 @@ class ParticipantSearch extends Participant
             ->andFilterWhere(['like', 'participant.live_monitor_name', $this->live_monitor_name])
             ->andFilterWhere(['like', 'participant.teaser_name', $this->teaser_name])
             ->andFilterWhere(['like', 'country.name', $this->countryName])
-            ->andFilterWhere(['like', 'sport.name', $this->sportType]);
+            ->andFilterWhere(['like', 'sport.name', $this->sportType])
+            ->andFilterWhere(['like', 'participant_mark.mark_name', $this->markName]);
 
         return $dataProvider;
     }

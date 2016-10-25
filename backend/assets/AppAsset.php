@@ -21,6 +21,7 @@ class AppAsset extends AssetBundle
         'js/JQDataPicker.js',
         'js/jquery-ui-1.11.4.js',
         'js/yii.confirm.overrides.js',
+        'js/participant.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

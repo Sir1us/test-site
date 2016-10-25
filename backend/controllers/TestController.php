@@ -2,17 +2,18 @@
 
 namespace backend\controllers;
 
-use yii\rest\ActiveController;
 
-class TestController extends ActiveController
+use backend\models\Test;
+use common\controllers\RequestController;
+use common\models\ApiActiveRecord;
+
+class TestController extends RequestController
 {
-
-    public $modelClass = 'common\models\User';
-
     public function actionIndex()
     {
-
-        return $this->render('index');
+        $new = new Test();
+        $response = $new->get();
+        return $this->render('index', ['response' => $response]);
     }
 
 }

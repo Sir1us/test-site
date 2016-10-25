@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ca97b1b4fb9c5c950862b14427c28bb7",
-    "content-hash": "e14870b405db7ea1182af1e157ce0ba1",
+    "hash": "4a0fd503ba65b3e1bbb2929c215e6841",
+    "content-hash": "e7db4377aaef4751950cf252f5e44045",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -459,7 +459,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/fc064e9d5c938c3d8ebc29862be1e3a0ff43fb44",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/69fa1b735e97ad1c4412da7fbb9b19975308e98c",
                 "reference": "fc064e9d5c938c3d8ebc29862be1e3a0ff43fb44",
                 "shasum": ""
             },
@@ -837,7 +837,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-detail-view/zipball/65e626c0b55e7cca0db0886410771cd304c1fbd2",
+                "url": "https://api.github.com/repos/kartik-v/yii2-detail-view/zipball/741f56f37858f0745cd180a505c7ddbe60b01829",
                 "reference": "65e626c0b55e7cca0db0886410771cd304c1fbd2",
                 "shasum": ""
             },
@@ -891,7 +891,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-dialog/zipball/d5c621075138c3c9c5948da4bd8fd4aff1ece49e",
+                "url": "https://api.github.com/repos/kartik-v/yii2-dialog/zipball/98136b6bfe4b1ad7333a0b6c8e0dc3b586227932",
                 "reference": "c277d1163c0ddf5d626f5a5b12924c43512526fb",
                 "shasum": ""
             },
@@ -934,6 +934,53 @@
             "time": "2016-10-10 12:43:36"
         },
         {
+            "name": "kartik-v/yii2-dropdown-x",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-dropdown-x.git",
+                "reference": "8520855270af448da0e66a6619634b324724c586"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-dropdown-x/zipball/8520855270af448da0e66a6619634b324724c586",
+                "reference": "8520855270af448da0e66a6619634b324724c586",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\dropdown\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An extended bootstrap dropdown widget for Yii 2 with submenu drilldown.",
+            "homepage": "https://github.com/kartik-v/yii2-dropdown-x",
+            "keywords": [
+                "Context",
+                "click",
+                "extension",
+                "menu",
+                "mouse",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-04-21 15:12:29"
+        },
+        {
             "name": "kartik-v/yii2-grid",
             "version": "dev-master",
             "source": {
@@ -943,7 +990,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/c731108f7cc2f37cd76f77af84c869e7dfa636f2",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/08dd6ded1f0c81d5c28fc10a99b1dba39a83eeb6",
                 "reference": "c731108f7cc2f37cd76f77af84c869e7dfa636f2",
                 "shasum": ""
             },
@@ -1087,7 +1134,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/8f558809e6093c8f4f4599b7b9fd64b366b22a60",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/71b4204c9966ea16393c736a06f76bffaa12e165",
                 "reference": "8f558809e6093c8f4f4599b7b9fd64b366b22a60",
                 "shasum": ""
             },
@@ -1547,7 +1594,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/e3fa29869a1430a98f4fa54f959f478a1d55f88b",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/744e12c1f5be45357ec50eea6f678ecc9ba67dc2",
                 "reference": "e3fa29869a1430a98f4fa54f959f478a1d55f88b",
                 "shasum": ""
             },
@@ -2199,6 +2246,49 @@
             "time": "2016-04-20 14:14:59"
         },
         {
+            "name": "maxwen/yii2-curl",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/max-wen/yii2-curl.git",
+                "reference": "87b756d99593a0ef01fdb2019e0ac8ec9808612e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/max-wen/yii2-curl/zipball/87b756d99593a0ef01fdb2019e0ac8ec9808612e",
+                "reference": "87b756d99593a0ef01fdb2019e0ac8ec9808612e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "maxwen\\yii\\curl\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Max Wen",
+                    "email": "max.wen@qq.com"
+                }
+            ],
+            "description": "A base curl wrapper for Yii2 Framework",
+            "keywords": [
+                "curl",
+                "extension",
+                "restful",
+                "yii2"
+            ],
+            "time": "2016-01-08 02:42:49"
+        },
+        {
             "name": "mpdf/mpdf",
             "version": "6.1.x-dev",
             "source": {
@@ -2606,7 +2696,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/4a8854d3179cd89b994c575203c70a21fc93af70",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/6903a97e002f9ce957f2b9c5e5ab782540f265ba",
                 "reference": "a196de299f915d7fbccd122ee942f6f76c8e32c7",
                 "shasum": ""
             },
@@ -2788,6 +2878,53 @@
             "time": "2016-06-05 20:34:32"
         },
         {
+            "name": "yiisoft/yii2-httpclient",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-httpclient.git",
+                "reference": "52a15444c54805935ba4b816ee78e7ef00a7a1a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-httpclient/zipball/52a15444c54805935ba4b816ee78e7ef00a7a1a9",
+                "reference": "52a15444c54805935ba4b816ee78e7ef00a7a1a9",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\httpclient\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "HTTP client extension for the Yii framework",
+            "keywords": [
+                "curl",
+                "http",
+                "httpclient",
+                "yii2"
+            ],
+            "time": "2016-10-14 09:56:42"
+        },
+        {
             "name": "yiisoft/yii2-jui",
             "version": "dev-master",
             "source": {
@@ -2926,7 +3063,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/740e29c8185173bc90da8770d13d386ae20016bd",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/87c9003bc4dadd245a62979a1e35396d6bbf3edf",
                 "reference": "66e2ffd3ea74f31cae48a9a4e1adfe2a1ff30150",
                 "shasum": ""
             },
@@ -3059,7 +3196,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/cfcdf55263545e98a5b0e782ef998ad7a0008ccb",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/4f8de2192fe354c8b903a083fcdcc3d1ddaccc8c",
                 "reference": "6ab1ba589298936d7bdd7dc63ceb3aada6e9c255",
                 "shasum": ""
             },
@@ -3153,7 +3290,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/a9e6c292e0bf1feb0538280f513e11bc3db876b6",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/12762bb0272db0bfceceeb151a1df6ec7a1898ce",
                 "reference": "a9e6c292e0bf1feb0538280f513e11bc3db876b6",
                 "shasum": ""
             },

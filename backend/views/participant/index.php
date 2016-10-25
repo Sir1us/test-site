@@ -41,6 +41,13 @@ $this->params['breadcrumbs'][] = $this->title;
                     return $sport_type->sport->name;
                 }
             ],
+            [
+                'label' => 'Mark',
+                'attribute' => 'markName',
+                'value' => function($mark_name) {
+                    return $mark_name->mark['mark_name'];
+                }
+            ],
             // 'del',
             // 'ut',
             // 'enet_id',

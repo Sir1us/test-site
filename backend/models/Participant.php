@@ -57,6 +57,11 @@ class Participant extends \yii\db\ActiveRecord
         return Sport::find()->select(['id','name'])->asArray()->all();
     }
 
+    public function get_marks()
+    {
+        return ParticipantMark::find()->asArray()->all();
+    }
+
     /**
      * @inheritdoc
      */
@@ -114,6 +119,14 @@ class Participant extends \yii\db\ActiveRecord
         return $this->hasOne(Sport::className(), ['id' => 'sport_id']);
     }
 
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getMark()
+    {
+        return $this->hasOne(ParticipantMark::className(), ['id' => 'mark_id']);
+    }
 
     /**
      * @return \yii\db\ActiveQuery

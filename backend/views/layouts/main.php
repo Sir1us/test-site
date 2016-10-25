@@ -62,7 +62,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'encodeLabels'=>false,
         'activateParents'=>true,
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav navbar-right', 'style' => ['color' => 'red']],
         'items' => $menuItems,
     ]);
     NavBar::end();

@@ -20,6 +20,7 @@ $this->params['breadcrumbs'][] = 'Update';
         'model' => $model,
         'get_list_country' => $get_list_country,
         'get_sports' => $get_sports,
+        'get_marks' => $get_marks,
     ]) ?>
 
 </div>

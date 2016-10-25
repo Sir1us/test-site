@@ -30,9 +30,6 @@ return [
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
-            'parsers' => [
-                'application/json' => 'yii\web\JsonParser',
-            ]
         ],
         'user' => [
             'class' => 'webvimark\modules\UserManagement\components\UserConfig',
@@ -59,9 +56,7 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'enableStrictParsing' => true,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
             ],
         ],
     ],

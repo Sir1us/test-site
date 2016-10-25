@@ -40,13 +40,16 @@ $this->params['breadcrumbs'][] = $this->title;
                 'label' => 'Sport',
                 'value' => $model->sport->name
             ],
+            [
+                'label' => 'Mark',
+                'value' => isset($model->mark->mark_name) ? $model->mark->mark_name : ''
+            ],
             //'del',
             'ut',
             //'enet_id',
             //'status_t',
             'last_update',
             'short_name',
-            'mark_id',
             'live_monitor_name',
             'teaser_name',
         ],
