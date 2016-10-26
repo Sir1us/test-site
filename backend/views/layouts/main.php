@@ -41,7 +41,8 @@ AppAsset::register($this);
             'label' => 'Menu', 'items' =>
             [
                 ['label' => 'Conversion', 'url' => ['/conversion/index']],
-                ['label' => 'Participant', 'url' => ['/participant/index']]
+                ['label' => 'Participant', 'url' => ['/participant/index']],
+                ['label' => 'SportForm', 'url' => ['/sportform/index']],
             ],
         ],
         ['label' => 'Permission', 'items'=>UserManagementModule::menuItems()],
