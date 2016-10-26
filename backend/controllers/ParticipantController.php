@@ -149,12 +149,21 @@ class ParticipantController extends RequestController
      */
     public function actionUpdate_mark() {
         $data = new ParticipantMark();
-        if($data->load(['ParticipantMark' => Yii::$app->request->post()]) && $data->save()) {
-            var_dump($data);
-            //die(json_encode($mark_list));
-        } else {
-            die('error');
+        $id = Yii::$app->request->post('id');
+        $params = [
+            '_csrf' => Yii::$app->getRequest()->csrfToken,
+            'ParticipantMark' => Yii::$app->request->post()
+        ];
+        if(!empty($id)) {
+            $data = $this->findModelMark($id);
         }
+        if ($data->load($params) && $data->save()) {
+            $list_mark = $data->get_marks();
+            die(json_encode($list_mark));
+        } else {
+            var_dump($data->getErrors());
+        }
+
     }
 
     /**

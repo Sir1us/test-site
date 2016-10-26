@@ -39,7 +39,7 @@ class ParticipantMark extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['default'], 'boolean'],
+            [['default'], 'boolean', 'trueValue' => true, 'falseValue' => false],
             [['mark_name', 'slug', 'short_name', 'name'], 'string', 'max' => 50],
         ];
     }
@@ -67,8 +67,8 @@ class ParticipantMark extends \yii\db\ActiveRecord
         return $this->hasMany(Participant::className(), ['mark_id' => 'id']);
     }
 
-    public function getOneMark($id) {
-           $res =  $this->find()->where(['id' => $id])->asArray()->one();
-        return $res;
+    public function get_marks()
+    {
+        return ParticipantMark::find()->asArray()->all();
     }
 }

@@ -41,7 +41,7 @@ use yii\widgets\ActiveForm;
             <select name="mark_id" id="mark_names" style="height: 34px; width: 100%; border-radius:4px 0 0 0; " class="btn btn-primary dropdown-toggle" title="">
                 <option></option>
                 <?php foreach ($get_marks as $mark) : ?>
-                    <option id="mark_id" value="<?=$mark['id']?>"<?= $model->mark_id == $mark['id'] ? 'selected' : ''?>><?= $mark['mark_name'] ?></option>
+                    <option value="<?=$mark['id']?>"<?= $model->mark_id == $mark['id'] ? 'selected' : ''?>><?= $mark['mark_name'] ?></option>
                 <?php endforeach; ?>
             </select>
             <div class="input-group-btn">
@@ -75,8 +75,7 @@ use yii\widgets\ActiveForm;
 
 <div class="modal fade" id="range_window" role="dialog" aria-labelledby="exampleModalLabel">
     <div class="modal-dialog " style="width:470px;" role="document">
-        <div class="modal-content" >
-
+        <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="exampleModalLabel">Mark Form</h4>
@@ -84,7 +83,7 @@ use yii\widgets\ActiveForm;
             <div class="modal-body" id="mark_form">
                 <input type="hidden" name="id" value="">
                 <div class="form-group">
-                    <label for="mark_name">Mark name:</label>
+                    <label for="marks_name">Mark name:</label>
                     <input type="text" class="form-control transfield_rl" name="marks_name" value="" required>
                 </div>
                 <div class="form-group">
@@ -112,7 +111,3 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
 </div>
-
-<script type="text/x-jquery-tmpl" id="mark_list_tmpl">
-<option value="${id}">${name}</option>
-</script>
